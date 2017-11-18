@@ -12,19 +12,19 @@ public class SelectionSort
 
     public static void sort (int data[])
     {
-        for(int i=0; i<data.length-1; i++)
+        for(int i = 0; i < data.length - 1; i++)
         {
-            int min=i;
+            int min = i;
 
-            for(int j=i+1; j<data.length;j++)
+            for(int j = i + 1; j < data.length; j++)
             {
-                if(data[min]>data[j])
+                if(data[min] > data[j])
                 {
-                    min=j;
+                    min = j;
                 }
             }
 
-            if(min!=i)
+            if(min != i)
             {
                 exchange(data, i, min);
             }
@@ -33,14 +33,14 @@ public class SelectionSort
 
     public static void main(String[] args)
     {
-        int arr[] ={1, 2, 3, 15, 12, -10, 13, -9};
+        int arr[] = {1, 2, 3, 15, 12, -10, 13, -9};
         sort(arr);
-        String comma="";
-        for (int i=0; i<arr.length; i++)
+        String comma = "";
+        for (int i = 0; i < arr.length; i++)
         {
             int data = arr[i];
-            System.out.print(comma+data);
-            comma=",";
+            System.out.print(comma + data);
+            comma = ",";
         }
     }
 }
