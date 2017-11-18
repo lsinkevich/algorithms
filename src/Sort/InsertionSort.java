@@ -12,16 +12,17 @@ public class InsertionSort
 
     public static void sort(int[] d, int left, int right)
     {
-        int rod = d[(left + right) / 2];
         int l = left;
         int r = right;
+        int mid = d[(left + right) / 2];
+
         while(l <= r)
         {
-            while(rod > d[l])
+            while(mid > d[l])
             {
                 l++;
             }
-            while(rod < d[r])
+            while(mid < d[r])
             {
                 r--;
             }
@@ -42,7 +43,7 @@ public class InsertionSort
         }
     }
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         int arr[] = {1, 2, 3, 15, 12, -10, 13, -9};
         sort(arr, 0, arr.length - 1);
