@@ -83,7 +83,8 @@ public class QuickSort
         int arr[] = {1, 2, 3, 15, 12, -10, 13, -9};
         sortOptimized(arr, 0, arr.length - 1);
         String comma = "";
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) 
+		{
             int data = arr[i];
             System.out.print(comma + data);
             comma = ",";

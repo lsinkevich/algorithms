@@ -45,7 +45,8 @@ public class InPlaceMergeSort
     {
         Integer arr[] = {1, 2, 3, 15, 12, -10, 13, -9};
         sort(arr);
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++)
+        {
             System.out.printf("%d ", arr[i]);
         }
         System.out.println();
