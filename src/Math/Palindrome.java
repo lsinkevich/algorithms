@@ -3,17 +3,17 @@ package Math;
 public class Palindrome {
 
     public static boolean isPal(int data){
-        if(data < 0)
+        if (data < 0)
             data = -data;
 
         int cdata = data;
         int rdata = 0;
 
-        while( data > 0){
+        while (data > 0){
             rdata = rdata * 10 + data % 10;
             data = data / 10;
         }
-        
+
         return (cdata == rdata);
     }
 

@@ -6,7 +6,7 @@ public class MonteCarloPi {
     public static void main(String[] args) {
         Random r = new Random(System.currentTimeMillis());
         int count = 0;
-        int iterations = 9999999;
+        int iterations = 1000;
 
         for (int i = 0; i < iterations; i++) {
             double x = r.nextDouble();
