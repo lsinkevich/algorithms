@@ -2,7 +2,6 @@ package Sort;
 
 public class InPlaceMergeSort
 {
-
     private static void exchange(final Comparable[] data, final int first, final int last)
     {
         Comparable swap_data;

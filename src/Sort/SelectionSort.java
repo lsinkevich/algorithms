@@ -2,7 +2,6 @@ package Sort;
 
 public class SelectionSort
 {
-
     private static void exchange(int[] data, int i, int min)
     {
         int swap_data = data[i];

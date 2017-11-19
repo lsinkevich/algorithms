@@ -2,7 +2,6 @@ package Sort;
 
 public class InsertionSort
 {
-
     public static void exchange(int[] data, int i, int j)
     {
         int swap_data = data[i];

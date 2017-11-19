@@ -3,7 +3,6 @@ import java.util.Arrays;
 
 public class MergeSort
 {
-
     private static void exchange(int[] data, int[] left, int[] right)
     {
         int l = 0;
