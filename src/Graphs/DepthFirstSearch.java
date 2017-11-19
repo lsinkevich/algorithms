@@ -4,16 +4,17 @@ import java.util.List;
 
 public class DepthFirstSearch {
 
-    private static final int MAX = 1000;
+    private static final int max_val = 100;
+
     static int k = 2;
-    static int val[] = new int[MAX + 1];
-    static int depth[] = new int[MAX + 1];
-    static int graph[][] = new int[MAX + 1][MAX + 1];
+    static int val[] = new int[max_val + 1];
+    static int depth[] = new int[max_val + 1];
+    static int graph[][] = new int[max_val + 1][max_val + 1];
 
     public static List<Integer> neighbor(final int data) {
         List<Integer> neighbor = new LinkedList<Integer>();
 
-        for (int i = 0; i <= MAX; i++) {
+        for (int i = 0; i <= max_val; i++) {
             if (graph[data][i] != 0)
                 neighbor.add(i);
         }
