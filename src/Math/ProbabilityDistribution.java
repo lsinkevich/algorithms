@@ -34,9 +34,9 @@ public class ProbabilityDistribution
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4 };
-        int frequency[] = { 10, 20, 30, 40 };
-        for (int i = 0; i < 5; i++)
-            System.out.printf("%d ", custom(arr, frequency));
+        int fr[] = { 10, 20, 30, 40 };
+        for (int i = 0; i < 10; i++)
+            System.out.printf("%d ", custom(arr, fr));
         System.out.println();
     }
 }
