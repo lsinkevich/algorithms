@@ -35,7 +35,7 @@ public class Dijkstra {
             }
 
             ArrayList<Integer> adjust = d.get(u);
-            for(int v=0; v < adjust.size(); v++){
+            for(int v = 0; v < adjust.size(); v++){
                 Integer alternative = dist[u] + d.get(u).get(v);
                 if (alternative < dist[v]) {
                     dist[v] = alternative;
@@ -61,10 +61,10 @@ public class Dijkstra {
         for (int i = 0; i < 10; i++) {
             d.add( new ArrayList<Integer>());
             for (int j = 0; j < 10; j++) {
-                if(i == 0 && j ==9)
-                    d.get(i).add(j,1);
+                if(i == 0 && j == 9)
+                    d.get(i).add(j, 1);
                 else if(i == j)
-                    d.get(i).add(j,0);
+                    d.get(i).add(j, 0);
                 else if(j < i)
                     d.get(i).add(j, d.get(j).get(i));
                 else
@@ -74,7 +74,7 @@ public class Dijkstra {
 
         for(int i = 0 ; i < d.size(); i++){
             ArrayList<Integer> v = d.get(i);
-            for(int j=0; j < v.size(); j++)
+            for(int j = 0; j < v.size(); j++)
                 System.out.printf("%d %d %d \n", i, j, v.get(j));
         }
         System.out.println();
