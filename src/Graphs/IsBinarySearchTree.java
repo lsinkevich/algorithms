@@ -77,5 +77,4 @@ public class IsBinarySearchTree {
             data = insertUnit(data, Math.abs(random.nextInt()) % 50);
         System.out.println(isBinarySearchTree(data, Integer.MIN_VALUE, Integer.MAX_VALUE));
     }
-
 }
