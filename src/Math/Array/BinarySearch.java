@@ -39,5 +39,4 @@ public class BinarySearch {
         int index = iteration(data, 10);
         System.out.printf("%d %d\n", index, data[index]);
      }
-
 }
