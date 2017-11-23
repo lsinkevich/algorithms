@@ -24,9 +24,8 @@ public class Intersection {
                 j++;
         }
 
-        for(int k = 0; k < index; k++){
+        for(int k = 0; k < index; k++)
             System.out.printf("%d ", intersection[k]);
-        }
 
         return intersection;
     }

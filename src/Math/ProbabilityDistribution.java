@@ -13,10 +13,8 @@ public class ProbabilityDistribution
             else
                 v = mid;
         }
-
         if (data[l] >= r)
             return l;
-
         return -1;
     }
 
