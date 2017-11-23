@@ -9,7 +9,6 @@ public class IsBinarySearchTree {
         private Unit<T> r;
         private T data;
 
-
         public Unit(final T v) {
             this.data = v;
             this.l = null;

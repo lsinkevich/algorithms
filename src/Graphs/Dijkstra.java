@@ -30,9 +30,8 @@ public class Dijkstra {
 
         while (!mass.isEmpty()) {
             int u = mass.remove();
-            if (dist[u] == Integer.MAX_VALUE) {
+            if (dist[u] == Integer.MAX_VALUE)
                 break;
-            }
 
             ArrayList<Integer> adjust = d.get(u);
             for(int v = 0; v < adjust.size(); v++){
@@ -44,7 +43,6 @@ public class Dijkstra {
                     mass.add(v);
                 }
             }
-
         }
 
         for (int i = 0; i < prev.length; i++) {
