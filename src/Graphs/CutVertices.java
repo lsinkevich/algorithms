@@ -56,7 +56,7 @@ public class CutVertices {
         g1.adjustment[1].add(2);
         g1.adjustment[2].add(3);
         g1.adjustment[3].add(2);
-        
+
         for (int i = 0; i < g1.vertice; i++)
         {
             parent_vertice[i] = null;
@@ -72,7 +72,5 @@ public class CutVertices {
         for (int i = 0; i < g1.vertice; i++)
             if (articulation_point[i] == true)
                 System.out.printf("%d ", i);
-
     }
-
 }
