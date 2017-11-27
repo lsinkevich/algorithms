@@ -25,6 +25,6 @@ public class MarkovChain {
                 }
             }
         }
-        System.out.println("Number of steps:" + step);
+        System.out.println(step + " steps:");
     }
 }
