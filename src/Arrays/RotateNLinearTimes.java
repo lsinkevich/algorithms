@@ -24,6 +24,5 @@ public class RotateNLinearTimes {
         for (int i : array)
             System.out.print(i + ",");
         System.out.println();
-
     }
 }

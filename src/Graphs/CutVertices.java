@@ -68,7 +68,7 @@ public class CutVertices {
             if (!visited[i])
                 g1.depthFirstTraversal(0, parent_vertice, visited, articulation_point, discovery_time, low_vertice);
 
-        System.out.printf("\narticulation points \n");
+        System.out.printf("articulation points \n");
         for (int i = 0; i < g1.vertice; i++)
             if (articulation_point[i] == true)
                 System.out.printf("%d ", i);

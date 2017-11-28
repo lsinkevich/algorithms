@@ -48,19 +48,6 @@ public class IsBinarySearchTree {
         return source;
     }
 
-    private static class index {
-        int data;
-
-        public index(int data) {
-            this.data = data;
-        }
-
-        public index update(int data) {
-            this.data = data;
-            return this;
-        }
-    }
-
     public static boolean isBinarySearchTree(Unit<Integer> data, int min, int max) {
         if (data == null)
             return true;

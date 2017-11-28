@@ -48,17 +48,6 @@ public class ClosestPairOfPoints {
         }
     }
 
-    public List<Integer> getList(final int data[]) {
-        return new AbstractList<Integer>() {
-            public Integer get(final int i) {
-                return data[i];
-            }
-            public int size() {
-                return data.length;
-            }
-        };
-    }
-
     public static double distance(final Prepare val1, final Prepare val2) {
         double xdistance = val1.x - val2.x;
         double ydistance = val1.y - val2.y;

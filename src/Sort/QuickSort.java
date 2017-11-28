@@ -8,32 +8,6 @@ public class QuickSort {
         data[j] = swap_data;
     }
 
-    public static void sort(int[] data, int first, int last) {
-        if (first < last) {
-            int middle = (first + last) / 2;
-            int f = first;
-            int s = first + 1;
-            int l = last;
-            exchange(data, f, middle);
-
-            int rod = data[f];
-            while (s < l) {
-                while (data[s] < rod && s < last)
-                    s++;
-                while (data[l] > rod && l > first)
-                    l--;
-                if (s < l)
-                    exchange(data, s++, l--);
-                else
-                    s++;
-            }
-
-            exchange(data, f, l);
-            sort(data, first, l - 1);
-            sort(data, l + 1, last);
-        }
-    }
-
     public static void sortOptimized(int[] data, int first, int last) {
         int f = first;
         int l = last;
