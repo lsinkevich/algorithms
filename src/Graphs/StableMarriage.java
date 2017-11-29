@@ -1,4 +1,4 @@
-package Queues;
+package Graphs;
 import java.util.Arrays;
 
 public class StableMarriage {

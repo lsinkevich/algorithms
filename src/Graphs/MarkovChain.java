@@ -1,4 +1,4 @@
-package Queues;
+package Graphs;
 
 public class MarkovChain {
 
