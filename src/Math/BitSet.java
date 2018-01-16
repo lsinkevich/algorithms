@@ -44,7 +44,7 @@ public class BitSet {
         Random r = new Random(System.currentTimeMillis());
         int array[] = new int[41];
 
-        for(int i=0; i < array.length;i++)
+        for(int i = 0; i < array.length; i++)
             array[i] = r.nextInt(40);
 
         duplicate(array);
