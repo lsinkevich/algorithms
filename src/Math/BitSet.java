@@ -15,7 +15,7 @@ public class BitSet {
         num = t>>2;
         bit = t & 0X1F;
 
-        if((bitSet[num] & (1<<bit))==0)
+        if((bitSet[num] & (1<<bit)) == 0)
             return false;
 
         return true;
@@ -25,7 +25,7 @@ public class BitSet {
         num = t>>2;
         bit = t & 0X1F;
 
-        bitSet[num]|=(1<<bit);
+        bitSet[num] |= (1<<bit);
     }
 
     public static void duplicate(int array[]){
@@ -34,7 +34,7 @@ public class BitSet {
         for (int i = 0; i < array.length; i++) {
             int num = array[i]-1;
             if(bs.getBit(num))
-                System.out.printf("%d duplicate\n", array[i]);
+                System.out.printf("%d - the duplicate\n", array[i]);
             else
                 bs.setBit(num);
         }
