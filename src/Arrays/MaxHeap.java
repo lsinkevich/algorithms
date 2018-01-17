@@ -81,7 +81,7 @@ public class MaxHeap {
         for (int i = 0; i < arr.length; i++)
             mh.raiseHeap(arr[i]);
 
-        for(int i = 0; i <k/2; i++)
+        for(int i = 0; i < k/2; i++)
             reductionHeap(i);
 
         while(k != 0) {
